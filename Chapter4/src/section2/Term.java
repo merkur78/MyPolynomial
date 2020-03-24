@@ -17,6 +17,4 @@ public class Term {
 	public String toString() {
 		return coef + "x^" + expo;
 	}
-	
-	
 }

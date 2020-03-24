@@ -12,6 +12,22 @@ public class Polynomial {
 		terms = new MySingleLinkedList<Term>();
 	}
 	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public MySingleLinkedList<Term> getTerms() {
+		return terms;
+	}
+
+	public void setTerms(MySingleLinkedList<Term> terms) {
+		this.terms = terms;
+	}
+
 	public void addTerm(int coef, int expo) {
 		if(coef == 0)
 			return;
@@ -57,7 +73,7 @@ public class Polynomial {
 	@Override
 	public String toString() { 
 		StringBuilder sb = new StringBuilder();
-		sb.append(name + "(x)=");
+		sb.append(name + "(x) = ");
 		Node<Term> p = terms.head;
 		
 		while(p != null) {
@@ -65,9 +81,5 @@ public class Polynomial {
 			p = p.next;
 		}
 		return sb.toString();
-	}
-
-	public static void main(String[] args) {
-		
 	}
 }
