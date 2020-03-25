@@ -76,7 +76,6 @@ public class MySingleLinkedList<T> {
 		if(head == null)
 			return false;
 		else {
-			//T temp = head.data;
 			head = head.next;
 			size--;
 			return true;
@@ -87,7 +86,6 @@ public class MySingleLinkedList<T> {
 		if(before.next == null)
 			return false;
 		else {
-			//T temp = before.next.data;
 			before.next = before.next.next;
 			size--;
 			return true;

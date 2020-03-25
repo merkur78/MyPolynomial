@@ -55,6 +55,8 @@ public class Polynomial {
 //			else
 //				terms.addAfter(before, term);
 //		}
+		
+		
 		Iterator<Term> p = terms.iterator();
 		Iterator<Term> before = null;
 		
