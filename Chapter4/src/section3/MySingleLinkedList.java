@@ -1,6 +1,7 @@
 package section3;
 
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.NoSuchElementException;
 
 public class MySingleLinkedList<T> {
@@ -31,7 +32,6 @@ public class MySingleLinkedList<T> {
 	
 	private class MyIterator implements Iterator<T> {
 		private Node<T> nextNode;
-		
 		
 		public MyIterator() {
 			this.nextNode = head;
